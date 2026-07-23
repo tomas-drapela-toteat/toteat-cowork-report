@@ -28,10 +28,10 @@
   <div class="topbar">
     <div class="row">
       <h1>Toteat LATAM · <span class="accent">Cowork</span></h1>
-      <div class="sub">Julio 2026 · Churns · Altas · Net New &nbsp;|&nbsp; generado 23 julio 2026</div>
+      <div class="sub">Julio 2026 · Mensual (Churns/Altas/Net New) + Diario (Casos/Chat/Riesgo) &nbsp;|&nbsp; generado 23 julio 2026</div>
     </div>
     <div class="ctabs">
-      <button class="ctab active" data-target="churn" onclick="showReport('churn')">📉 Churns</button><button class="ctab" data-target="altas" onclick="showReport('altas')">📈 Altas</button><button class="ctab" data-target="netnew" onclick="showReport('netnew')">⚖️ Net New</button>
+      <button class="ctab active" data-target="churn" onclick="showReport('churn')">📉 Churns</button><button class="ctab" data-target="altas" onclick="showReport('altas')">📈 Altas</button><button class="ctab" data-target="netnew" onclick="showReport('netnew')">⚖️ Net New</button><button class="ctab" data-target="casos" onclick="showReport('casos')">📋 Casos Abiertos</button><button class="ctab" data-target="chat" onclick="showReport('chat')">💬 Chat Soporte</button><button class="ctab" data-target="riesgo" onclick="showReport('riesgo')">⚠️ Riesgo Churn</button>
     </div>
   </div>
   <div class="frames">
@@ -537,7 +537,7 @@ window.addEventListener(&#x27;resize&#x27;, ()=&gt;{
 });
 &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;" title="⚖️ Net New"></iframe>
+&lt;/html&gt;" title="⚖️ Net New"></iframe><iframe class="report-frame" id="frame-casos" src="https://tomas-drapela-toteat.github.io/toteat-case-alerts/" title="📋 Casos Abiertos"></iframe><iframe class="report-frame" id="frame-chat" src="https://tomas-drapela-toteat.github.io/toteat-case-alerts/intercom/" title="💬 Chat Soporte"></iframe><iframe class="report-frame" id="frame-riesgo" src="https://tomas-drapela-toteat.github.io/toteat-churn-report/" title="⚠️ Riesgo Churn"></iframe>
   </div>
 <script>
   function showReport(id) {
